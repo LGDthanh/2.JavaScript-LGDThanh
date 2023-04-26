@@ -1,0 +1,29 @@
+Cú Pháp:
+1. alert('') // thông báo
+2. var fullName = 'LGDthanh' // Khuyến nghị khi đặt Biến nên đặt Từ đầu tiên viết thường 
+                          //nhưng từ sau nên viết hoa chữ cái đầu
+3. // Comment một dòng
+/* Comment nhiều
+dòng */
+4.Hàm built-in:
+- alert
+- console:
+console.log('dòng log LGD');
+console.log(fullName);
+console.warn(fullName); // cảnh báo
+console.error(fullName); // Lõi
+
+- confirm:
+confirm('Xac nhan tren 18 tuoi'); // Gần giống alert
+
+- prompt:
+prompt('Xac nhan tren 18 tuoi'); // Gần giống alert
+
+- set timeout:
+setTimeout(function() {
+    alert('setTimeout')  // Một lần
+}, 1000); 
+- set interval:
+setInterval(function() {
+    console.log('Day là log LGD'+ Math.random()); // Liên tục
+}, 1000)
