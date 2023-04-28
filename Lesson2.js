@@ -41,6 +41,6 @@ console.log(name)
 // <=
 var boolean = a > b;// Boolean true, false 
 // Toán tử logic
-// && - And
-// || - Or
+// && - And - var 'a' && null && 'c xét từ trái sang phải găp 1 trong 6 giá trị false thì chọn luôn
+// || - Or  - var 'a' || false || 'c' ngược với &&
 // ! - Not
