@@ -1,4 +1,4 @@
-/*Chuỗi trng JS
+/*Chuỗi trong JS
 1. Tạo chuỗi:
 - kiểm tra data type - typeof fullName
 2. Một số case sử dụng backslash(\)
@@ -35,6 +35,7 @@ var myString = '   Hoc JavaaScript! JS and JS   '
 // const myString2 = 'LGDthanh Nguyễn'
 // console.log(myString2.charAt(0));
 // console.log(myString2[110]);
+
 
 
 
