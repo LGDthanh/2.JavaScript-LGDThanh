@@ -26,3 +26,4 @@ switch(date){
         console.log('Không biết');
 }
 // if else < > !==
+// switch 
