@@ -19,5 +19,30 @@ Tham số hàm trong JS
  3. Arrow function
  */
 // Object trong JS
+// Object constructor
+// Object prototype - Basic
+// 1.Prototype
+function User( firstName, lastName, avatar) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.avatar = avatar;
 
+    this.getName = function() {
+        return `${this.firstName} ${this.lastName}`
+    }    
+}
+User.prototype.className = ' VT06';
+User.prototype.getClassName = function(){
+    return this.className;
+}
 
+var author = new User('Thanh', 'Nguyen', 'Avatar');
+var user = new User('LGDthanh', 'Nguyen', 'Avatar');
+
+author.title = 'LGD';
+user.comment = 'javascript';
+
+console.log(user.className);
+console.log(user.getClassName());
+console.log(author.getName());
+console.log(user.getName);
