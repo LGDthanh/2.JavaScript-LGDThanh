@@ -62,10 +62,30 @@ var courses = [
 // })
 // console.log(isFree)
 
-var listCourses = courses.filter(function(course, index){
-    console.log(index);
+// var listCourses = courses.filter(function(course, index){
+//     console.log(index);
     
-    return course.name === 'LGD'
-})
-console.log(listCourses)
+//     return course.name === 'LGD'
+// })
+// console.log(listCourses)
+
+// var listCourses = courses.map(function(course, index, originArray){
+//     // console.log(course);
+    
+//     return {
+//         id: course.id,
+//         name: `Khoa hoc: ${course.name}`,
+//         coin: course.coin,
+//         coinText: `Gia: ${course.coin}`,
+//         index: index,
+//         originArray: originArray
+//     }
+// })
+// console.log(listCourses)
+
+var totalCoin = courses.reduce(function(accumulator, currentValue, currentIndex) {
+    return accumulator + currentValue.coin;
+
+} , 0)
+console.log(totalCoin);
 
