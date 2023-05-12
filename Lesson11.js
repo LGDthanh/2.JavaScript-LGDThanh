@@ -32,9 +32,9 @@ var courses = [
     
     {id: 3, name: 'Javascript', coin: 0 },
     {id: 4, name: 'Python', coin: 0},
-    {id: 2, name: 'LGD', coin: 20},
+    {id: 5, name: 'LGD', coin: 20},
 
-    {id: 5, name: 'C++', coin: 200}
+    {id: 6, name: 'C++', coin: 200}
 ]
 
 // courses.forEach(function(courses, index){
@@ -83,9 +83,52 @@ var courses = [
 // })
 // console.log(listCourses)
 
-var totalCoin = courses.reduce(function(accumulator, currentValue, currentIndex) {
-    return accumulator + currentValue.coin;
+// var totalCoin = courses.reduce(function(accumulator, currentValue, currentIndex) {
+//     return accumulator + currentValue.coin;
 
-} , 0)
-console.log(totalCoin);
+// } , 0)
+// console.log(totalCoin);
 
+// Flat - "Làm phẳng" mảng từ Depth array - " Mảng Sâu"
+// var depthArray = [1, 2,[3, 4], 5, 6, [7, 8, 9]];
+// var flatArray = depthArray.reduce(function(flatOutput, depthItem){
+//     return flatOutput.concat(depthItem)
+// }, [])
+// console.log(flatArray)
+
+// Lấy ra các khóa học đưa vào 1 mảng mới
+var topics = [
+    {
+        topic: "Front-end",
+        courses:[
+            {
+                id: 1,
+                title: "HTML, CSS"
+            },
+            {
+                id: 2,
+                title: "JavaScript"
+            }
+        ]
+    },
+    {
+        topic: "Back-end",
+        courses:[
+            {
+                id: 3,
+                title: "Node.js"
+            },
+            {
+                 id: 4,
+                 title: "Express.js"
+            }
+        ]
+    }
+];
+var topicsArray = topics.reduce(function(courses, topic){
+    console.log(courses)
+    console.log(topic)
+
+    return courses.concat(topic.courses)
+}, [])
+console.log(topicsArray)
